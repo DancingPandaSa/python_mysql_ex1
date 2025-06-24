@@ -12,5 +12,8 @@ cnx=mysql.connector.connect(
 print("透過連線取得 cursor物件")
 dbcursor=cnx.cursor()
 print("執行 select name from city")
+print("記得開權限")
+#grant insert,update,select on world.* to 'dbuser'@"%";
+#flush privileges;
 dbcursor.execute("select name from city")
 
