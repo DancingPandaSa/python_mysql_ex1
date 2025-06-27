@@ -1,5 +1,5 @@
 import mysql.connector
-
+#
 #
 print("建立資料庫連線中")
 cnx=mysql.connector.connect(
